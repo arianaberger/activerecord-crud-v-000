@@ -26,8 +26,8 @@ end
 
 def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990}) #this is a default hash
   Movie.create do |m|
-    binding.pry
-    m.title = args[:title]
+    # binding.pry
+    m.title = args[:title] #produce value of key in args
     m.release_date = args[:release_date]
   end
 end
